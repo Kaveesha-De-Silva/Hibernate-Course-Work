@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="287.0" prefWidth="699.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hms.controller.EditPaidStatusFormController">
+   <children>
+      <TableView fx:id="tblReserve" layoutX="14.0" layoutY="14.0" prefHeight="125.0" prefWidth="671.0">
+        <columns>
+          <TableColumn fx:id="colResID" prefWidth="121.0" text="RES ID" />
+          <TableColumn fx:id="colDate" prefWidth="139.0" text="Date" />
+            <TableColumn fx:id="colStudentID" prefWidth="135.0" text="Student ID" />
+            <TableColumn fx:id="colRoomID" prefWidth="148.0" text="Room ID" />
+            <TableColumn fx:id="colStatus" prefWidth="127.0" text="Status" />
+        </columns>
+      </TableView>
+      <HBox layoutX="376.0" layoutY="231.0" prefHeight="46.0" prefWidth="301.0" spacing="20.0">
+         <children>
+            <JFXButton buttonType="RAISED" onAction="#btnExit" prefHeight="41.0" prefWidth="138.0" style="-fx-background-color: red;" text="Cancel">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#btnSave" prefHeight="41.0" prefWidth="138.0" style="-fx-background-color: green;" text="Confirm">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Label layoutX="26.0" layoutY="155.0" text="Pay Key Money">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="rdBtnPayNow" layoutX="26.0" layoutY="193.0" text="Pay now" />
+      <JFXRadioButton fx:id="rdBtnPayLater" layoutX="132.0" layoutY="193.0" text="Pay Later" />
+      <Label layoutX="415.0" layoutY="148.0" text="*  please select the row on the table">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="521.0" prefWidth="683.0" style="-fx-background-color: #a5b1c2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hms.controller.UserLoginFormController">
+   <children>
+      <ImageView fitHeight="83.0" fitWidth="97.0" layoutX="302.0" layoutY="24.0" pickOnBounds="true">
+         <image>
+            <Image url="@asserts/Sample_User_Icon.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtUsername" layoutX="200.0" layoutY="198.0" prefHeight="31.0" prefWidth="305.0" promptText="Username">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="pwdPassword" layoutX="201.0" layoutY="277.0" prefHeight="31.0" prefWidth="305.0" promptText="Password">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXPasswordField>
+      <JFXButton buttonType="RAISED" layoutX="384.0" layoutY="423.0" onAction="#btnLoginOnAction" prefHeight="54.0" prefWidth="151.0" style="-fx-background-color: #4b7bec;" text="Login">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="172.0" layoutY="423.0" onAction="#btnExit" prefHeight="54.0" prefWidth="151.0" style="-fx-background-color: red;" text="Cancel">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></JFXButton>
+      <CheckBox fx:id="chkBxShowPassword" layoutX="204.0" layoutY="327.0" mnemonicParsing="false" onAction="#chkBxShowPassword" prefHeight="21.0" prefWidth="180.0" text="Show Password">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></CheckBox>
+      <Label fx:id="lblPw" layoutX="200.0" layoutY="353.0" prefHeight="21.0" prefWidth="305.0" textFill="#3f2b97" />
+      <Label layoutX="276.0" layoutY="108.0" text="User Login">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="45.0" fitWidth="52.0" layoutX="123.0" layoutY="185.0" pickOnBounds="true">
+         <image>
+            <Image url="@asserts/user%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="46.0" layoutX="126.0" layoutY="264.0" pickOnBounds="true">
+         <image>
+            <Image url="@asserts/lock.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

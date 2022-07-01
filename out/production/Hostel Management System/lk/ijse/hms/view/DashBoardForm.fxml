@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="553.0" prefWidth="982.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hms.controller.DashBoardFormController">
+   <children>
+      <ImageView fitHeight="553.0" fitWidth="982.0" pickOnBounds="true">
+         <image>
+            <Image url="@asserts/2112.w015.n001.671B.p15.671.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="353.0" layoutY="277.0" onAction="#btnToUserLogin" prefHeight="64.0" prefWidth="280.0" style="-fx-background-color: #17d330; -fx-background-radius: 5;" text="LOGIN">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="262.0" layoutY="25.0" style="-fx-background-color: yellow; -fx-background-radius: 10;" text="The D24 Hostel">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

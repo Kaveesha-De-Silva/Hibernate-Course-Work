@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="497.0" prefWidth="781.0" style="-fx-background-color: #a5b1c2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hms.controller.UserControlsFormController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="641.0" layoutY="444.0" onAction="#btnExit" prefHeight="36.0" prefWidth="110.0" style="-fx-background-color: #B53471;" text="Back">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="361.0" layoutY="241.0" onAction="#btnKeyMoneyNotPaid" prefHeight="62.0" prefWidth="302.0" style="-fx-background-color: #A3CB38;" text="Students who haven't pay key money">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="356.0" layoutY="139.0" onAction="#btnStudentDetails" prefHeight="62.0" prefWidth="312.0" style="-fx-background-color: #54a0ff;" text="Students who reserved a specified room">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="33.0" layoutY="342.0" onAction="#btnToManageRooms" prefHeight="62.0" prefWidth="218.0" style="-fx-background-color: #009432;" text="Manage Rooms">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="33.0" layoutY="57.0" onAction="#btnToMakeRegistration" prefHeight="62.0" prefWidth="211.0" style="-fx-background-color: #009432;" text="Make Registration">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="33.0" layoutY="151.0" onAction="#btnToManageStudents" prefHeight="62.0" prefWidth="211.0" style="-fx-background-color: #009432;" text="Manage Students">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="33.0" layoutY="244.0" onAction="#btnToEditUnPw" prefHeight="62.0" prefWidth="211.0" style="-fx-background-color: #009432;" text="Edit User Credentials">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
